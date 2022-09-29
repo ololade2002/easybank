@@ -1,0 +1,150 @@
+
+.career {
+   text-decoration: none;
+   
+}
+.career-body {
+    display: flex;
+    flex-direction: row;
+    padding: 0rem 0rem 3.1rem 0rem;
+background-color:  hsl(192, 70%, 51%);
+position: relative;
+height: 120vh;
+}
+.left-career {
+    flex: 1;
+ padding: 0rem 0rem 0rem 4rem;
+}
+.btn-c {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.left-career>h2 {
+    font-weight: 500;
+   color: white;
+    font-size: 3rem;
+    margin: 4rem 0rem 3rem 0rem;
+    filter:drop-shadow(3px 3px 4px  hsl(192, 70%, 51%) ) ;
+}
+.left-career>p {
+    font-weight: 300;
+    color: white;
+    margin-bottom: 2rem;
+}
+.right-career {
+    flex: 1;
+}
+
+
+.custom-shape-divider-bottom-1664228237 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1664228237 svg {
+    position: relative;
+    display: block;
+    width: calc(126% + 1.3px);
+    height: 221px;
+}
+
+.custom-shape-divider-bottom-1664228237 .shape-fill {
+    fill: white;
+}
+
+
+.career-main {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 4rem 4rem;
+    
+}
+.main-left {
+    flex: 1;
+    position: relative;
+    z-index: 10;
+    
+}
+.text-c {
+    background-color: white;
+    position: relative;
+    z-index: 10;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   top: -3.2rem;
+   border-radius: 5px;
+    padding: 1rem 1rem; 
+    height: auto;
+}
+.text-c>h6 {
+color:#2bb7da;
+font-size: 1.1rem;
+}
+.text-c>h2 {
+    color: hsl(233, 26%, 24%) ;
+    font-size: 2rem;
+}
+.text-c>p {
+    font-weight: 300;
+}
+.blob {
+   background: linear-gradient(150deg,hsl(192, 70%, 51%),hsl(136, 65%, 51%));
+    border-radius: 26rem;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: -2rem;
+    right: -18rem;
+    z-index: 0;
+   }
+
+.main-right {
+    flex: 1;
+    position: relative;
+    z-index: 10;
+}
+.main-right>img {
+    position: relative;
+    z-index: 10;
+   border-radius: 5px;
+}
+
+@media screen and (max-width:992px) {
+    .career-body {
+        flex-direction: column;
+        overflow-y: hidden; 
+        height: auto;
+    }
+    .left-career {
+        text-align: center;
+        padding: 0rem 3rem 3rem 3rem;
+    }
+    .left-career>button {
+        margin: auto;
+    }
+    .right-career {
+       padding: 0rem 0rem;
+    }
+    .right-career>img {
+        object-fit: cover;
+     width: 100%;
+    }
+
+ .career-main {
+    padding: 3rem 3rem;
+ }
+
+}
+
+
+
+@media screen and (max-width:768px) {
+    .career-main {
+        flex-direction: column;
+     }
+     .left-career>h2 {
+        font-size: xx-large;
+     }
+}
