@@ -1,0 +1,140 @@
+
+.team-head {
+    padding: 3rem 5rem 5rem 5rem;
+    overflow-y: hidden;
+ 
+}
+.team-head>h3 {
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    color:  hsl(233, 26%, 24%);
+
+}
+.team-preview {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.left-t {
+    flex: 1;
+   padding: 1rem 2rem;
+    text-align: right;
+}
+.left-t>div {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 2rem 2rem;
+    border-radius: 1px;
+}
+.left-t>div>h5 {
+    color:  hsl(233, 26%, 24%) ;
+    font-weight: 300;
+    font-size: 1rem;
+}
+.left-t>div>h6 {
+    font-size: 1.1rem;
+    color:  hsl(233, 26%, 24%);
+    font-weight: 600;
+}
+.left-t>div>p {
+   font-weight: 300;
+   font-size: 1rem;
+}
+.right-t {
+    flex: 1;
+    position: relative;
+    z-index: 10;
+}
+.img-t {
+    width: 17rem;
+  height: 20rem;
+  object-fit: cover;
+position: relative;
+z-index: 10;
+}
+.arrows {
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+}
+
+.left-arrow>img {
+    width: 30px;
+}
+.right-arrow>img {
+    width: 30px; 
+}
+
+.div1 {
+position: absolute;
+height: 20rem;
+width: 17rem;
+right: 5rem;
+top: 2rem;
+background: linear-gradient(80deg, hsl(192, 70%, 51%),hsl(136, 65%, 51%));
+}
+.div2 {
+    position: absolute;
+    height: 20rem;
+    width: 17rem;  
+    background: transparent;
+    top: -2rem;
+    left: 5rem;
+    border: 2px solid hsl(192, 70%, 51%);
+}
+
+
+
+@media screen and (max-width:992px) {
+  .team-head {
+    padding: 0rem 2rem 6rem 2rem;
+    height: auto;
+  }  
+  .team-head>h3 {
+    text-align: center;
+margin-bottom: 4rem;
+  }
+  .team-preview {
+    flex-direction: column-reverse;
+    row-gap: 3rem;
+  }
+.img-t {
+    width: 15rem;
+    height: 17rem;
+    position: relative;
+}
+.arrows {
+    position: absolute;
+    bottom: -5rem;
+    right: 0;
+}
+.left-t {
+padding: 3rem 0rem;
+
+}
+.left-t>div {
+    padding: 2rem 2rem;
+   
+}
+.div1 {
+    width: 15rem;
+    height: 17rem; 
+    left: -2rem;
+}
+.div2 {
+    width: 15rem;
+    height: 17rem;
+    left: 2rem;
+}
+}
+
+
+@media screen and (max-width:768px) {
+    .team-head>h3 {
+        font-size: xx-large;
+        margin: 4rem 0rem;
+    }
+}

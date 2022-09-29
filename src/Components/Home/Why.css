@@ -1,0 +1,81 @@
+
+.why {
+    overflow: visible;
+    background-color: hsl(220, 16%, 96%);
+    padding: 4rem 5rem 4rem 5rem;
+ transform: translateY(-5rem);
+ position: relative;
+ z-index: 10;
+   height: auto;
+}
+.why>h1 {
+font-weight: 300;
+margin-bottom: 1.7rem;
+color: hsl(233, 26%, 17%);
+}
+.why>p {
+    font-size: 15px;
+    margin-bottom: 2.5rem;
+    width: 50%;
+}
+.why-card {
+    display: flex;
+    flex-direction: row;
+   justify-content: space-evenly;
+   gap: 2rem;
+}
+.card-preview {
+   background-color: white;
+   box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+   display: flex;
+   flex-direction: column;
+text-align: center;
+   border-radius: 15px;
+   width: 570px;
+  padding: 1rem 1rem;
+}
+.card-preview>img {
+   width: 4.8rem;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 2rem;
+}
+.card-preview>h2 {
+    font-size: 22px;
+    margin-bottom: 2rem;
+    color: hsl(233, 26%, 24%);
+}
+.card-preview>span {
+    font-size: 14px;
+    margin-bottom: 1rem;
+  
+}
+.active {
+   background: linear-gradient(0deg,  hsl(136, 65%, 51%),hsl(192, 70%, 51%) );
+   color: white;
+   transition-delay: 300ms;
+
+}
+
+@media screen and (max-width:992px) {
+    .why {
+        padding: 3rem 3rem;
+    }
+    .why>h1 {
+        text-align: center;
+    }
+    .why>p {
+        width: 100%;
+        text-align: center;
+    }
+    .why-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+    }
+    .card-preview {
+        flex-direction: column;
+        width: 100%;
+    }
+}
